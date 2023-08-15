@@ -10,6 +10,7 @@ const AddTasks = ({ setTasks }) => {
 		e.preventDefault();
 
 		const newTask = { title, priority, status };
+		
 
 		fetch('http://localhost:3000/todos', {
 			method: 'POST',

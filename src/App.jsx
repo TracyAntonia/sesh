@@ -11,7 +11,7 @@ export default function App() {
 		axios.get('http://localhost:3000/todos').then((res) => {
 			setTasks(res.data);
 		});
-	}, [tasks]);
+	}, []);
 
 	return (
 		<>
